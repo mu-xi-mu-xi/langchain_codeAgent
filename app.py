@@ -72,16 +72,16 @@ class CodeAssistantApp:
             st.markdown("---")
             st.caption("""
             **功能说明**：
-            1. 💬 智能问答 - 基于代码库提问
-            2. 📄 代码摘要 - 上传文件生成摘要
-            3. 🔍 代码搜索 - 搜索相似代码片段
+            1. 智能问答 - 基于代码库提问
+            2. 代码摘要 - 上传文件生成摘要
+            3. 代码搜索 - 搜索相似代码片段
             """)
             
             return index_dir, use_rag
     
     def render_chat_interface(self, use_rag: bool):
         """渲染聊天界面"""
-        st.header("💬 代码智能问答")
+        st.header("代码智能问答")
         
         # 显示聊天历史
         for chat in st.session_state.chat_history:
@@ -256,9 +256,9 @@ class CodeAssistantApp:
         
         # 主界面标签页
         tab1, tab2, tab3 = st.tabs([
-            "💬 智能问答", 
-            "📄 代码摘要", 
-            "🔍 代码搜索"
+            "智能问答", 
+            "代码摘要", 
+            "代码搜索"
         ])
         
         with tab1:

@@ -70,6 +70,7 @@ class CodebaseIndexer:
                             "line": node.lineno
                         }
                     ))
+                    print(f"✅ 解析到函数 {node.name}，文件路径：{file_path}")
                 
                 elif isinstance(node, ast.ClassDef):
                     class_code = ast.get_source_segment(content, node)
